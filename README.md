@@ -46,6 +46,18 @@ ollama use llama3.2
 
 ![llama3.2 sample](./images/llama3.2-sample.gif)
 
+## Open WebUIで実行する
+
+```sh
+docker run -d -p 3000:8080 -e OLLAMA_BASE_URL=http://host.docker.internal:11434 -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
+```
+
+http://localhost:3000 にアクセスするとサインアップが要求される。
+
+![](./images/open-webui.png)
+
+![](./images/open-webui2.png)
+
 ## プロジェクトのセットアップ
 
 本プロジェクトは、[Ollama JavaScript Library](https://github.com/ollama/ollama-js)を用いて、OllamaのAPIを実行するサンプルです。
