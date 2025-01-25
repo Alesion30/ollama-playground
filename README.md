@@ -21,3 +21,10 @@ export MISE_NODE_VERSION=$(jq -r .engines.node ./package.json)
 ```sh
 node src/main.ts
 ```
+
+## カスタムモデルの利用
+
+```sh
+ollama create mario -f ./models/mario/Modelfile
+ollama list
+```
