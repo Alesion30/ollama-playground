@@ -15,3 +15,9 @@ direnvのセットアップが完了していない場合は、 https://direnv.n
 ```sh
 export MISE_NODE_VERSION=$(jq -r .engines.node ./package.json)
 ```
+
+## 実行
+
+```sh
+node src/main.ts
+```

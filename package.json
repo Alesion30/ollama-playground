@@ -1,10 +1,14 @@
 {
   "name": "ollama-playground",
   "version": "0.0.0",
+  "type": "module",
   "engines": {
     "node": "23"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "ollama": "^0.5.12"
   }
 }
