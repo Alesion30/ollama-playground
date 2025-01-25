@@ -58,6 +58,10 @@ http://localhost:3000 にアクセスするとサインアップが要求され�
 
 ![](./images/open-webui2.png)
 
+認証後は、GUIでローカルLLMを実行できるようになります。
+
+![](./images/open-webui3.png)
+
 ## プロジェクトのセットアップ
 
 本プロジェクトは、[Ollama JavaScript Library](https://github.com/ollama/ollama-js)を用いて、OllamaのAPIを実行するサンプルです。
@@ -80,6 +84,20 @@ export MISE_NODE_VERSION=$(jq -r .engines.node ./package.json)
 npm install
 node src/main.ts
 ```
+
+## Docker Onlyで始める場合
+
+```sh
+docker compose up -d
+```
+
+適当なmodelをpullします。
+
+```sh
+docker compose exec ollama ollama pull llama3.2
+```
+
+http://localhost:3000 にアクセスすると、GUIでローカルLLMを実行できるようになります。
 
 ## ワークアラウンド
 
