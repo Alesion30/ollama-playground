@@ -82,7 +82,7 @@ export MISE_NODE_VERSION=$(jq -r .engines.node ./package.json)
 
 ```sh
 npm install
-node src/main.ts
+node src/deepseek-jp.ts
 ```
 
 ## Docker Onlyで始める場合
