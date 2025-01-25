@@ -1,5 +1,12 @@
 # Custom Model
 
+## llama3.2 Japanese
+
+```sh
+ollama create llama3.2-jp -f ./llama3.2-jp/Modelfile
+ollama run llama3.2-jp
+```
+
 ## DeepSeek R1 Japanese
 
 ```sh
