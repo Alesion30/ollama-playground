@@ -68,3 +68,13 @@ export MISE_NODE_VERSION=$(jq -r .engines.node ./package.json)
 npm install
 node src/main.ts
 ```
+
+## ワークアラウンド
+
+Ollama.app経由で起動した場合、ollamaサーバーをkillできない問題があるので、下記コマンドでOllama.appを終了させる必要があります。
+
+```sh
+osascript -e 'tell app "Ollama" to quit'
+```
+
+参考: https://github.com/ollama/ollama/issues/2372
